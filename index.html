@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Vusumusi Mkhabela</title>
+    <meta name="description" content="A Windows '98 themed personal website for Vusi Mkhabela">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="js/script.js"></script>
+</head>
+
+
+
+<body onload="clock()">
+
+    <!-- INTRODUCTION SPLASH ANIMATION -->
+    <!-- <div class="splash-content" id="splash-content">
+
+
+    INTRODUCTION SPLASH ANIMATION -->
+    <div class="splash-content">
+        <h1 class="splash-header">
+        </h1>
+    </div>
+
+    <!-- Clippy -->
+    <div class="clippy">
+        <div class="clippy-message">
+            <img src="img/clippy_message_box.png" alt="Clippy message bubble" height="150" width="250">
+            <div class="text">
+                <p>Hi! I am Clippy, Vusi's office assistant. Find his amazing work in the Projects.docx document, click
+                    on
+                    Projects for more! </p>
+            </div>
+        </div>
+
+        <div class="clippy-body">
+            <img src="img/clippy.png" alt="Clippy from Microsoft" height="150" width="150">
+        </div>
+    </div>
+
+    <!-- HOME ICONS -->
+    <div class="icons">
+        <div class="computer-icon" ondblclick="showMyPC()" id="computer-icon">
+            <input type="image" value="Show Div" onclick="showMyPC()" src="img/computerIcon.png" name="computer-icon"
+                alt="Computer icon from Windows 2000">
+            <p onclick="showMyPC()">My Computer</p>
+        </div>
+
+        <div class="contact-icon" onclick="showRecycle()" id="contact-icon">
+            <input type="image" onclick="showRecycle()" src="img/recycle_bin.png" name="contact-icon"
+                alt="Globe icon from Windows 2000">
+            <p onclick=" ">Recycle Bin</p>
+        </div>
+
+        <div class="contact-icon" ondblclick="showProfile()" id="contact-icon">
+            <input type="image" onclick="showProfile()" src="img/users.png" name="profile-icon"
+                alt="Globe icon from Windows 2000">
+            <p onclick="showProfile()">Profile</p>
+        </div>
+
+        <div class="contact-icon" onclick="showAboutMe()" id="contact-icon">
+            <input type="image" onclick="showAboutMe()" src="img/wordpad.png" height="50" width="auto"
+                name="contact-icon" alt="Globe icon from Windows 2000">
+            <p onclick="showAboutMe()">Projects.docx</p>
+        </div>
+
+        <div class="contact-icon" onclick="showContact()" id="contact-icon">
+            <input type="image" onclick="showContact()" src="img/contact.png" name="contact-icon"
+                alt="Globe icon from Windows 2000">
+            <p onclick="showContact()">Contact</p>
+        </div>
+
+
+
+    </div>
+
+    <!-- INTRO FILE -->
+    <div class="intro" id="intro">
+        <div class="intro-header" id="intro-header">
+            <p>welcome.html</p>
+            <div class="intro-buttons">
+                <button class="minimize" onclick="closeOut()" aria-label="Minimize button"></button>
+                <button class="closeOut" onclick="closeOut()" aria-label="Close out button"></button>
+            </div>
+        </div>
+
+        <div class="intro-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+
+        <div class="intro-separator"></div>
+        <div class="intro-content">
+            <br>
+            <div class="text-content">
+                <h1>Welcome to my world.</h1>
+                <p>
+                    I am a principled and an enthusiastic individual who has a considerable interest in data analytics,
+                    innovative web developments, in advancing cyber security strategies and next generation
+                    technologies.
+                    <br>
+                    <br> I employ excellent agility, leadership, team-player skills, and multi-tasking strengths
+                    acquired directly from my experiences such as with clients, students, and respectfully liaise with
+                    the upper structures.
+                    <br>
+                    <br> While my short retail experience has equipped me with strong analysis skills, general marketing
+                    skills, and relationship building, I have demonstrated an ability to continuously learn, adapt,
+                    share, or apply and advance that knowledge.
+                    I value honesty, integrity, and accountability
+
+
+
+            </div>
+            <img src="img/welcome.png" height="190" width="40" alt="A picture of me!">
+        </div>
+
+        <div class="intro-footer">
+            <div class="intro-footer-content">
+                <p>1 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+    <!-- RECYCLE BIN FOLDER -->
+    <div class="recycle-content" id="recycle-content" style="display:none;">
+        <div class="recycle-header" id="recycle-header">
+            <p><img src="img/recycle_bin.png" width="15" height="auto"> Recycle Bin</p>
+            <div class="recycle-buttons" onclick="closeOutRecycle()">
+                <button class="minimize" onclick="closeOutRecycle()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutRecycle()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="recycle-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="recycle-separator"></div>
+
+        <div class="information">
+            <div class="info-inspo1">
+                <img src="img/recycle_bin.png" height="50" width="50">
+                <div class="text-content">
+                    <h1>Recycle Bin</h1>
+                    <p>
+                        <hr />
+                    <h4>Select an item to view its description</h4>
+                    File folder
+                    <br>
+                    <h4>Modified:</h4>
+                    5/2/21 6:20 AM
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-inspo2">
+                <p>Recyle Bin is empty.</p>
+            </div>
+        </div>
+
+        <div class="recycle-footer">
+            <div class="recycle-footer-content">
+                <p>0 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ABOUT ME FILE -->
+    <div class="aboutme-content" id="aboutme-content" style="display: none;">
+
+        <div class="aboutme-header" id="aboutme-header">
+
+            <p><img src="img/wordpad.png" width="15" height="auto"> Projects.docx
+            </p>
+            <div class="aboutme-buttons" onclick="closeOutAboutMe()">
+                <button class="minimize" onclick="closeOutAboutMe()" aria-label="Minimize button"></button>
+                <button class="closeOut" onclick="closeOutAboutMe()" aria-label="Close out button"></button>
+            </div>
+        </div>
+
+        <div class="aboutme-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="aboutme-wpbar">
+            <img src="img/wpbar.gif" alt="wpbar">
+        </div>
+
+        <div class="aboutme-wpdf">
+            <img src="img/wpdf.gif" alt="wpd">
+        </div>
+
+        <div class="aboutme-separator"></div>
+
+        <div class="aboutme-wpruler">
+            <img src="img/wpruler.gif" alt="wpd">
+        </div>
+
+        <div class="aboutme-text">
+            <br>
+            <h1>Projects</h1>
+            <p>
+            <ul>
+
+                <div class="project-title">
+                    <a href="https://github.com/vusimkhabela/nwu">
+                        <h4>Discovery Vitality Rewards [Backend]</h4>
+                    </a>
+                    <ul>
+                        <br />
+                        <img class="projectimg" src="img/discovery.png">
+                        <li class="projects">
+                            The project is for a managing the Vitality’s Active Rewards programme earned by members who
+                            make healthy choices and living a healthy lifestyle through Discovery’s Vitality. Members
+                            would get
+                            rewarded for achieving their exercise, drive, and money goals with Vitality Active Rewards.
+                            The
+                            Vitality Active Rewards programme sets each weekly goal that takes the members entire
+                            Vitality
+                            Active Rewards history into account.
+                            <div class="stacks">
+                                <img src="img/intellij.png" alt="IntelliJ">
+                                <img src="img/java.png" alt="Java">
+                                <img src="img/maven.png" alt="Maven">
+                                <img src="img/spring.png" alt="Spring">
+                            </div>
+                    </ul>
+                </div>
+
+                <div class="project-title">
+                    <a href="https://github.com/vusimkhabela/Project-/tree/master/Project--master/26978008_Proj2">
+                        <h4>Photo Gallery
+                        </h4>
+                    </a>
+                    <ul>
+                        <br />
+                        <img class="projectimg" src="img/vee_gallery.PNG">
+                        <li class="projects">
+                            Vee_Gallery is a Web application that is creatively and innovatively designed to allow users
+                            to visually share and discover metadata information by uploading, or rather, posting,
+                            henceforth, photos publicly or privately and to allow users to browse what other users have
+                            posted onto the main gallery, or "timeline". It cuts through the clutter faced today and
+                            allows
+                            the stories of the images shared to shine through.
+                            <div class="stacks">
+                                <img src="img/html.png" alt="HTML">
+                                <img src="img/CSS.png" alt="CSS">
+                                <img src="img/javascript.png" alt="JS">
+                                <img src="img/php.png" alt="PHP">
+                                <img src="img/laravel.png" alt="Laravel">
+                            </div>
+                    </ul>
+                </div>
+
+                <div class="project-title">
+                    <a href="https://github.com/vusimkhabela/mysqlproject">
+                        <h4>MySQL</h4>
+                    </a>
+                    <ul>
+                        <br />
+                        <img class="projectimg" src="img/mysql-tables.png">
+                        <li class="projects">
+                            This is a simple MySQL application that was part of my education syllabus in varsity.
+                            <div class="stacks">
+                                <img src="img/mySQL.png" alt="MySQL">
+
+                            </div>
+                    </ul>
+                </div>
+                </p>
+                <hr />
+                <h1>More Stacks</h1>
+                <p>
+                <div class="extrastacks">
+                    <img src="img/oracle.png" alt="Oracle">
+                    <img src="img/c-sharp.png" alt="C-Sharp">
+                    <img src="img/mongo.png" alt="MongoDB">
+                    <img src="img/jQuery.png" alt="JQuery">
+                    <img src="img/python.png" alt="Python">
+                </div>
+                </p>
+                <br>
+                <br>
+        </div>
+    </div>
+
+
+    <!-- CONTACT FILE -->
+    <div class="contact-content" id="contact-content" style="display: none;">
+        <div class="contact-header" id="contact-header">
+            <p>Contact Information</p>
+            <div class="contact-buttons" onclick="closeOutContact()">
+                <button class="minimize" onclick="closeOutContact()" aria-label="Minimize button"></button>
+                <button class="closeOut" onclick="closeOutContact()" aria-label="Close out button"></button>
+            </div>
+        </div>
+
+        <div class="contact-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="contact-separator"></div>
+        <h1 class="contact-text">Lets get in touch..</h1>
+        <div class="contact-redirects">
+            <div class="contact-icons">
+                <div class="mail">
+                    <a href="mailto:veemkhabela1996@gmail.com" target="_blank"><input height="100" width="100"
+                            type=image src="img/mail.png" name="mail-icon" alt="Digitized mail icon">
+                        <p>Email</p>
+                    </a>
+                </div>
+
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/vusimkh/" rel="noreferrer" target="_blank"><input height="100"
+                            width="100" type=image src="img/LinkedinIconShadow.png" name="linkedin-icon"
+                            alt="Digitized linkedin icon">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+
+                <div class="github" id="contactIcon" onclick="closeOutContact(), showGithub()">
+                    <input height="100" width="100" type=image src="img/github.png" name="github-icon"
+                        alt="Digitized GitHub icon">
+                    <p>GitHub</p>
+                </div>
+
+                <div class="twitter">
+                    <a href="https://twitter.com/brain_soulkit/" target="_blank">
+                        <input height="100" width="100" type=image src="img/TwitterIcon.png" name="mail-icon"
+                            alt="Digitized mail icon">
+                        <p>Twitter</p>
+                    </a>
+                </div>
+
+                <div class="tumblr">
+                    <a href="https://www.tumblr.com/blog/theekingiv" target="_blank"><input height="100" width="100"
+                            type=image src="img/TumblrIcon.png" name="tumblr-icon" alt="Digitized mail icon">
+                        <p>Tumblr Blog</p>
+                    </a>
+                </div>
+
+                <div class="tel">
+                    <a href="tel:+27767531710" target="_blank"><input height="100" width="100" type=image
+                            src="img/tel.png" name="tel-icon" alt="Digitized mail icon">
+                        <p>Tel</p>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- YOTUBE API -->
+    <div class="youtube-content" id="youtube-content" style="display: none;">
+        <div class="youtube-header" id="youtube-header">
+            <p>youtube.txt</p>
+            <div class="youtube-buttons" onclick="closeOutYoutube()">
+                <button class="minimize" onclick="closeOutYoutube()" aria-label="Minimize button"></button>
+                <button class="closeOut" onclick="closeOutYoutube()" aria-label="Close out button"></button>
+            </div>
+        </div>
+
+        <div class="youtube-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="youtube-separator"></div>
+
+        <div class="text-content">
+            <div class="youtube_api_icon">
+                <img class="git_gif_icon" src="img/youtube.gif" name="git-gif-icon" alt="Digitized github gif">
+            </div>
+            <div class="youtube_api_title">
+                Youtube Player
+            </div>
+            <div class="youtube_api_content">
+                Aside of my web and software developing skills, I also enjoy filmmaking. This is my latest short-film
+                project. The 40 minutes long, visual poetry film,
+                #Mistakes, takes on multiple recaps of my past life featuring nolgastic clips and never seen footages of
+                me growing up from old memory cards. This includes
+                showing off my vulnerable and weak times and my rejoicing and happy moments. I really hope and pray my
+                story touches at least some one's life out there
+                and propell one to becoming best they can despite their mistakes and past failures - a failure is an
+                opportunity to learn. " - Vusumusi Mkhabela (filmmaker & film director)
+                <br>
+            </div>
+
+        </div>
+        <div class="youtube-redirects">
+            <div name="api ">
+                <div class="youtubeAPI">
+                    <div class="container-api2">
+                        <section id="video">
+                        </section>
+                        <main>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GITHUB API -->
+    <div class="github-content" id="github-content" style="display: none;">
+        <div class="github-header" id="github-header">
+            <p><img src="img/github.png" width="10" height="auto">Github
+            </p>
+            <div class="github-buttons" onclick="closeOutGithub()">
+                <button class="minimize" onclick="closeOutGithub()" aria-label="Minimize button"></button>
+                <button class="closeOut" onclick="closeOutGithub()" aria-label="Close out button"></button>
+            </div>
+        </div>
+
+        <div class="github-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="github-separator"></div>
+
+        <div class="github-text">
+            <br>
+            <h1>GitHub information</h1>
+            <p>
+            <div class="api">
+                <section style="background-color: transparent; margin-left: 0.5rem;">
+                    <div id="github" class="api_section"></div>
+                </section>
+            </div>
+            </p>
+        </div>
+        <div class="github-footer">
+            <div class="github-footer-content">
+                <p>3 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+    <!-- MY COMPUTER FOLDER -->
+    <div class="mypc-content" id="mypc-content" style="display:none;">
+        <div class="mypc-header" id="mypc-header">
+
+            <p><img src="img/computerIcon.png" width="10" height="auto"> My Computer</p>
+            <div class="mypc-buttons" onclick="closeOutMyPC()">
+                <button class="minimize" onclick="closeOutMyPC()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutMyPC()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="mypc-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="mypc-separator"></div>
+
+        <div class="information">
+            <div class="info-inspo1">
+                <img src="img/computerIcon.png" height="50" width="50" left="10" alt="corner icon from Windows 2000">
+                <div class="text-content">
+
+                    <h1>Computer</h1>
+                    <p>
+                        <hr />
+                    <h4 id="description">Select an item to view its description</h4>
+                    File folder
+                    <br>
+                    <h4>Modified:</h4>
+                    29/11/21 1:35 PM
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-inspo2">
+                <div class="folder_icon" id="educationIcon" onclick="closeOutMyPC(), showMatric()">
+                    <input type=image src="img/images.png" alt="folder">
+                    <p onclick="closeOutMyPC(), showMatric()">Pictures</p>
+                </div>
+                <div class="folder_icon" id="experienceIcon" onclick="closeOutMyPC(), showYoutube()">
+                    <input type=image src="img/videos.png" alt="folder">
+                    <p onclick="showEXPTerminal(),  closeOutProfile()">YouTube</p>
+                </div>
+                <div class="folder_icon" id="locationIcon" onclick=" ">
+                    <input type=image src="img/images.png" alt="folder" height="32" width="32">
+                    <p onclick=" ">Audio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mypc-footer">
+            <div class="mypc-footer-content">
+                <p>3 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+    <!-- MY EDUCATION TERMINAL -->
+    <div class="education-content" id="education-content" style="display: none;">
+        <div class="education-header" id="education-header">
+            <img src="img/terminal.png" alt="education icon from windows 98">
+            <h4>Education History</h4>
+            <div class="education-buttons" onclick="closeOutEDUTerminal()">
+                <button class="minimize" onclick="closeOutEDUTerminal()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutEDUTerminal()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="education-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="education-separator"></div>
+
+        <div class="css-typing">
+            <p>Microsoft(R) Windows 98</p>
+            <p>&ltC&gt Copyright Microsoft Corp.</p>
+            <p>C:\Users\vusimkhabela>_cd Education_History\_dir</p>
+            <br>
+            <p>
+                1. Grade 12<br> Westridge High School<br> Year: 2009 - 2014<br> Mathematics, <br> Computer Application
+                Technology,<br> Life Science<br> History
+                <br> =====================================
+                <br><br> 2. Web Development Training<br> MasterGrade IT<br> Year: 2015 - Discontinued<br> HTML5, CSS3,
+                JavaScript<br> =====================================
+                <br><br> 3. Bsc. Information Technology<br> North-West University<br> Year: 2016 - 2021<br> IT
+                Development, <br> Operating Systems,<br> Networks
+                <br> System Analysis & Design<br> A.I
+                <br>
+            </p>
+        </div>
+        <div class="css-display">
+
+        </div>
+    </div>
+
+    <!-- MY EXPERIENCE TERMINAL -->
+    <div class="experience-content" id="experience-content" style="display: none;">
+        <div class="experience-header" id="experience-header">
+            <img src="img/terminal.png" alt="experience icon from windows 98">
+            <h4>Work Experience</h4>
+            <div class="experience-buttons" onclick="closeOutEXPTerminal()">
+                <button class="minimize" onclick="closeOutEXPTerminal()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutEXPTerminal()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="experience-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="experience-separator"></div>
+
+        <div class="css-typing">
+            <p>Microsoft(R) Windows 98</p>
+            <p>&ltC&gt Copyright Microsoft Corp.</p>
+            <p>C:\Users\vusimkhabela>_cd Work_Experience\_dir</p>
+            <br>
+            <p>
+                1. Sales Assistant<br> Makro (Agent: Hospitality Express)<br> Year: APRIL 2015 – NOV 2015<br> Serving
+                customers and dealing with enquiries.<br> Managing product inventories at the store<br> Conduct
+                effective sales.<br> =====================================
+                <br><br> 2. Residence Chairperson and Public Relations Officer<br> North-West University (Student
+                Affairs Department)<br> Year: SEP 2016 – SEP 2017<br> Acting as chief spokesperson and representative of
+                the residence.<br> Provide leadership
+                and monitor and control housecommittee<br> activities and delegate duties where necessary.<br> Ensure
+                the University’s Risk Management policy is applied.<br> =====================================
+                <br><br> 3. Supplementary Instructor (SI) Leader<br> North-West University (Academic Development and
+                Support Department)<br> Year: JAN - JUNE 2017<br> Plan and conduct two 60-minute SI sessions per week
+                throughout the semester.<br> Plan
+                and meet with the mathematics professor periodically for reporting<br>and timesheet submission.
+            </p>
+        </div>
+
+        <div class="css-display">
+
+        </div>
+    </div>
+
+    <!-- PICTURES FOLDER -->
+    <div class="matric-content" id="matric-content" style="display:none;">
+        <div class="matric-header" id="matric-header">
+            <p><img src="img/users.png" width="15" height="auto"> Folder</p>
+            <div class="matric-buttons" onclick="closeOutMatric()">
+                <button class="minimize" onclick="closeOutMatric()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutMatric()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="matric-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="matric-separator"></div>
+
+        <div class="information">
+            <div class="info-inspo1">
+                <img src="img/directory2.png" height="50" width="50" left="10" alt="corner icon from Windows 2000">
+                <div class="text-content">
+                    <h1>Pictures</h1>
+                    <p>
+                        <hr />
+                    <h4>Select an item to view its description</h4>
+                    File folder
+                    <br>
+                    <h4>Modified:</h4>
+                    5/12/21 4:20 AM
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-inspo2">
+                <div class="folder_icon" id="experienceIcon" onclick="openMatric()">
+                    <input type=image src="img/matric.png" alt="folder">
+                    <p onclick="openMatric()">matric_certificate.jpeg</p>
+                </div>
+                <div class="folder_icon" id="Icon" onclick=" ">
+                </div>
+                <div class="folder_icon" id="Icon" onclick=" ">
+                </div>
+            </div>
+        </div>
+
+        <div class="matric-footer">
+            <div class="matric-footer-content">
+                <p>1 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROFILE FOLDER -->
+    <div class="profile-content" id="profile-content" style="display:none;">
+        <div class="profile-header" id="profile-header">
+            <p><img src="img/users.png" width="15" height="auto"> Folder</p>
+            <div class="profile-buttons" onclick="closeOutProfile()">
+                <button class="minimize" onclick="closeOutProfile()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutProfile()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="profile-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="profile-separator"></div>
+
+        <div class="information">
+            <div class="info-inspo1">
+                <img src="img/directory2.png" height="50" width="50" left="10" alt="corner icon from Windows 2000">
+                <div class="text-content">
+                    <h1>Profile</h1>
+                    <p>
+                        <hr />
+                    <h4>Select an item to view its description</h4>
+                    File folder
+                    <br>
+                    <h4>Modified:</h4>
+                    5/7/14 4:20 AM
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-inspo2">
+                <div class="folder_icon" id="educationIcon" onclick="showEDUTerminal(), closeOutProfile()">
+                    <input type=image src="img/ms.png" alt="folder">
+                    <p onclick="showEDUTerminal(), closeOutProfile()">education.dll</p>
+                </div>
+                <div class="folder_icon" id="experienceIcon" onclick="showEXPTerminal(),  closeOutProfile()">
+                    <input type=image src="img/ms.png" alt="folder">
+                    <p onclick="showEXPTerminal(),  closeOutProfile()">work_experience.dll</p>
+                </div>
+                <div class="folder_icon" id="locationIcon" onclick="openResume()">
+                    <input type=image src="img/resume.png" alt="folder">
+                    <p onclick="openResume()">Resume</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-footer">
+            <div class="profile-footer-content">
+                <p>3 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Credits -->
+    <div class="credits-content" id="credits-content" style="display:none;">
+        <div class="credits-header" id="credits-header">
+            <p>credits.txt</p>
+            <div class="credits-buttons" onclick="closeOutCredits()">
+                <button class="minimize" onclick="closeOutCredits()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutCredits()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="credits-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="credits-separator"></div>
+
+        <div class="information">
+            <div class="info-inspo1">
+                <img src="img/directory2.png" height="50" width="50" left="10" alt="corner icon from Windows 2000">
+                <div class="text-content">
+                    <h1>Profile</h1>
+                    <p>
+                        <hr />
+                    <h4>Select an item to view its description</h4>
+                    File folder
+                    <br>
+                    <h4>Modified:</h4>
+                    5/7/14 4:20 AM
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-inspo2">
+                <div class="folder_icon" id="contactIcon" onclick="showGithub(), closeOutContact()">
+                    <input type=image src="img/directory.png" alt="folder">
+                    <p onclick="showGithub(), closeOutContact()">Education</p>
+                </div>
+                <div class="folder_icon" id="contactIcon" onclick="showGithub(), closeOutContact()">
+                    <input type=image src="img/directory.png" alt="folder">
+                    <p onclick="showGithub(), closeOutContact()">Work Experience</p>
+                </div>
+                <div class="folder_icon" id="contactIcon" onclick="showGithub(), closeOutContact()">
+                    <input type=image src="img/internet1.png" alt="folder">
+                    <p onclick="showGithub(), closeOutContact()">Location</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="credits-footer">
+            <div class="credits-footer-content">
+                <p>3 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Start Menu -->
+    <div id="startmenu" style="display:none;">
+        <div class="startmenu-title">
+            <h3><strong>Windows</strong> 98</h3>
+        </div>
+
+        <div class="startmenu-options">
+            <div class="computerIcon" id="computerIcon" onclick="showMyPC()">
+                <input type="image" value="Show Div" onclick="showMyPC()" src="img/computerIcon.png"
+                    name="computer-icon" alt="My Computer">
+                <p onclick="showMyPC()">My Computer</p>
+            </div>
+
+            <div class="aboutmeIcon" id="aboutmeIcon" onclick="showProfile()">
+                <img src="img/directory2.png" name="aboutme-icon" onclick="showProfile()" alt="Files and folders">
+                <p onclick="showProfile()">Documents</p>
+            </div>
+
+            <div class="credits" onclick=" ">
+                <input onclick=" " type="image" src="img/help.png" alt="Help is at your finger tips">
+                <p onclick=" ">Find</p>
+            </div>
+
+
+            <div class="contactIcon" id="contactIcon" onclick="showContact()">
+                <input type="image" onclick="showContact()" src="img/contact.png" name="contact-icon" alt="Contact me">
+                <p onclick="showContact()">Contact</p>
+            </div>
+
+            <div class="resumeIcon" id="resumeIcon" onclick="openResume()">
+                <input type=image src="img/resume.png" onclick="openResume()" name="resume-icon" alt="Purple book">
+                <p onclick="openResume()">Resume</p>
+            </div>
+
+            <div class="menu-partition">
+            </div>
+
+            <div class="shutDown" onclick="showTerminal()">
+                <input type="image" onclick="showTerminal()" src="img/shutdown.png" width="52" height="52"
+                    alt="computer with a blue screen">
+                <p onclick="showTerminal()">Sh<u>u</u>t down</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="terminal-content" id="terminal-content" style="display: none;">
+        <div class="terminal-header" id="terminal-header">
+            <img src="img/terminal.png" alt="terminal icon from windows 98">
+            <h4>HyperTerminal</h4>
+            <div class="terminal-buttons" onclick="closeOutTerminal()">
+                <button class="minimize" onclick="closeOutTerminal()" aria-label="minimize button"></button>
+                <button class="closeOut" onclick="closeOutTerminal()" aria-label="close out button"></button>
+            </div>
+        </div>
+
+        <div class="terminal-options">
+            <p><u>F</u>ile</p>
+            <br>
+            <p><u>E</u>dit </p>
+            <p><u>V</u>iew </p>
+            <p><u>O</u>ptions </p>
+            <p><u>H</u>elp </p>
+        </div>
+
+        <div class="terminal-separator"></div>
+
+        <div class="css-typing">
+            <p>Microsoft(R) Windows 98</p>
+            <p>&ltC&gt Copyright Microsoft Corp.</p>
+            <p>C:\Users\vusimkhabela>_cd shut_down\_dir</p>
+            <br>
+            <p>Thank you for visiting! I hope to hear from you soon...</p>
+        </div>
+
+        <div class="terminal-footer">
+            <div class="terminal-footer-content">
+                <p>1 object(s)</p>
+                <img src="img/corner.png" height="15" width="15" alt="corner icon from Windows 2000">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="taskbar">
+            <div class="startButton" onclick="showStart()">
+                <input type="image" value="startButton" src="img/windows-start.png" name="startButton"
+                    alt="Start icon from Windows 2000">
+                <p>Start</p>
+            </div>
+
+            <div class="partition">
+            </div>
+
+            <div class="icons">
+                <img src="img/ie.png" size="28" height="28" alt="Internet Explorer icon">
+                <img src="img/notepad.png" size="28" height="28" alt="Small notepad with a pencil icon">
+                <img src="img/email.png" size="28" height="28" alt="Email icon with blue arrows surrounding">
+            </div>
+
+            <div class="partition1">
+            </div>
+
+            <div onclick="showIntro()" class="intro-button">
+                <input type="image" height="32px" value="intro-button" src="img/internet.png" name="intro-button"
+                    alt="internet explorer icon">
+                <p>welcome.html</p>
+            </div>
+
+            <div class="partion2"></div>
+            <div class="clock" id="clock">
+                <p>8:88PM</p>
+            </div>
+
+
+            <div class="msn">
+                <img src="img/msn.png" alt="MSN">
+            </div>
+
+            <div class="pc">
+                <img src="img/computer.png" alt="Computer">
+            </div>
+
+            <div class="volume">
+                <img src="img/loudspeaker.png" alt="volume speaker">
+            </div>
+
+            <div class="battery">
+                <img src="img/battery.png" alt="Battery">
+            </div>
+
+        </div>
+    </footer>
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="CXEQLDRV" defer></script>
+    <!-- / Fathom -->
+
+    <script>
+        dragElement(document.getElementById("intro"));
+        dragElement(document.getElementById('aboutme-content'));
+        dragElement(document.getElementById('contact-content'));
+        dragElement(document.getElementById('github-content'));
+        dragElement(document.getElementById('credits-content'));
+        dragElement(document.getElementById('profile-content'));
+        dragElement(document.getElementById('recycle-content'));
+        dragElement(document.getElementById('matric-content'));
+        dragElement(document.getElementById('youtube-content'));
+        dragElement(document.getElementById('mypc-content'));
+        dragElement(document.getElementById('education-content'));
+        dragElement(document.getElementById('experience-content'));
+        dragElement(document.getElementById('terminal-content'));
+
+
+
+        function dragElement(elmnt) {
+            var pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            if (document.getElementById(elmnt.id + "-header")) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
+            } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+
+        document.addEventListener('mouseup', function (e) {
+            var container = document.getElementById('startmenu');
+            if (!container.contains(e.target)) {
+                container.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/splash.js"></script>
+    <script src="js/script.js "></script>
+    <script src="plugins/jquery-2.2.4.min.js"></script>
+    <script src="plugins/jquery.appear.min.js"></script>
+    <script src="plugins/jquery.easypiechart.min.js"></script>
+
+    <!-- Github API -->
+    <script src="js/github_api.js "></script>
+
+    <!-- YouTube API Maintenance -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
+    <script src="js/youtube_api.js "></script>
+
+</body>
+
+</html>
+
+<!-- Github API -->
+<script src="js/github_api.js "></script>
